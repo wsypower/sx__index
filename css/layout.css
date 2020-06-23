@@ -1,0 +1,285 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 1440px;
+  margin: 0;
+}
+.sx {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/index-bc.png") no-repeat top center;
+  background-size: cover;
+  overflow: auto;
+  position: relative;
+}
+.sx__header--bar {
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  top: 102px;
+  background: url("../images/index-bar.png") no-repeat 50% 0%;
+}
+.sx__container {
+  height: 100%;
+  width: 1500px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1800px) {
+  .sx__container {
+    width: 1600px;
+  }
+}
+@media screen and (max-width: 1601px) {
+  .sx__container {
+    width: 1500px;
+  }
+}
+@media screen and (max-width: 1441px) {
+  .sx__container {
+    width: 1400px;
+  }
+}
+@media screen and (max-width: 1337px) {
+  .sx__container {
+    width: 1300px;
+  }
+}
+.sx__container header {
+  display: flex;
+  height: 142px;
+  width: 100%;
+  flex: none;
+  justify-content: space-between;
+}
+/* ====================================================== */
+/* ========================= 标题 ========================= */
+/* ====================================================== */
+.sx__title {
+  height: 100%;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+/* ====================================================== */
+/* ========================= 天气 ========================= */
+/* ====================================================== */
+.sx__weather {
+  height: 100%;
+  width: 600px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.sx__weather--item {
+  display: flex;
+  flex-direction: row;
+  height: 107px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+.sx__weather--item .weather--item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 43px;
+  margin-right: 15px;
+}
+.sx__weather--item .weather--item-icon img {
+  width: 100%;
+}
+.sx__weather--item .weather--item-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sx__weather--item .weather--item-des .temperature {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 2px;
+}
+.sx__weather--item .weather--item-des .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+/* ====================================================== */
+/* ======================== main ======================== */
+/* ====================================================== */
+.sx__container main {
+  display: flex;
+  flex: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* ====================================================== */
+/* ======================== 中心区域 ======================== */
+/* ====================================================== */
+.sx__content {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+/* ====================================================== */
+/* ======================== 右侧工具栏 ======================= */
+/* ====================================================== */
+.sx__toolbar {
+  width: 66px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  align-items: flex-end;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.sx__toolbar .sx__toolbar--item {
+  width: 47px;
+  height: 46px;
+  background-color: #32aaf5;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sx__toolbar .sx__toolbar--item:nth-child(2) {
+  background-color: #0173fa;
+}
+.sx__toolbar .sx__toolbar--item:nth-child(3) {
+  background-color: #464af3;
+}
+/* ====================================================== */
+/* ========================= 主内容 ======================== */
+/* ====================================================== */
+.sx__main {
+  width: 100%;
+  height: 410px;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  padding-top: 40px;
+}
+
+/* ====================================================== */
+/* ========================= 统计 ========================= */
+/* ====================================================== */
+.sx__statistics {
+  width: 307px;
+  height: 100%;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  background-color: red;
+}
+.sx__statistics--header {
+}
+.sx__statistics--main {
+}
+/* ====================================================== */
+/* ========================= 系统 ========================= */
+/* ====================================================== */
+.sx__system {
+  height: 100%;
+  flex: auto;
+  background-color: sandybrown;
+}
+
+/* ====================================================== */
+/* ======================== 底部导航 ======================== */
+/* ====================================================== */
+.sx__nav {
+  height: 265px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+.sx__nav .sx__nav--item {
+  flex: none;
+  flex-direction: column;
+}
+
+.sx__nav--item-header {
+  height: 36px;
+  font-family: title;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 40px;
+}
+.sx__nav--item-main {
+  display: flex;
+  flex-direction: row;
+  width: 381px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sx__nav .sx__nav--item.two .sx__nav--item-main {
+  width: 180px;
+}
+.sx__nav .sx__nav--item.two .sx__nav--item-main .sx__sub--nav {
+  margin-right: 0;
+}
+.sx__sub--nav {
+  display: flex;
+  flex-direction: row;
+  color: #e1f7ff;
+  font-size: 18px;
+  height: 60px;
+  width: 180px;
+  background-color: #20336c;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 20px;
+}
+.sx__sub--nav:nth-child(2n-1) {
+  margin-right: 21px;
+}
+.sx__sub--nav-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  flex: none;
+}
+.sx__sub--nav-name {
+  height: 100%;
+  color: #e1f7ff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+}
+/* ====================================================== */
+/* ======================== 字体设置 ======================== */
+/* ====================================================== */
+@font-face {
+  font-family: title;
+  src: url("../font/FZZZHONGHJW.TTF");
+}
