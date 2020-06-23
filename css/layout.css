@@ -3,6 +3,7 @@ body {
   width: 100%;
   height: 100%;
   min-width: 1440px;
+  min-height: 830px;
   margin: 0;
 }
 .sx {
@@ -13,7 +14,6 @@ body {
   align-items: center;
   background: url("../images/index-bc.png") no-repeat top center;
   background-size: cover;
-  overflow: auto;
   position: relative;
 }
 .sx__header--bar {
@@ -25,11 +25,11 @@ body {
 }
 .sx__container {
   height: 100%;
-  width: 1500px;
+  width: 1400px;
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1700px) {
   .sx__container {
     width: 1600px;
   }
@@ -185,11 +185,58 @@ body {
   display: flex;
   flex: none;
   flex-direction: column;
-  background-color: red;
 }
 .sx__statistics--header {
+  font-family: title;
+  width: 100%;
+  height: 49px;
+  color: #ffffff;
+  font-size: 22px;
+  background: url("../images/statistics-border.png") no-repeat bottom;
+  flex: none;
 }
 .sx__statistics--main {
+  flex: auto;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ~~~~~~~~~~~~~~~~ 单个统计样式 ~~~~~~~~~~~~~~~ */
+.sx__statistics--item {
+  height: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sx__statistics--item-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  width: 72px;
+  height: 32px;
+  flex: none;
+  background: url("../images/statistics-title-bc.png") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+.sx__statistics--item-num {
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.sx__statistics--item-nums {
+  color: #fff;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ====================================================== */
 /* ========================= 系统 ========================= */
@@ -197,25 +244,157 @@ body {
 .sx__system {
   height: 100%;
   flex: auto;
-  background-color: sandybrown;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-left: 64px;
+  box-sizing: border-box;
+}
+/* ~~~~~~~~~~~~~~~~ 系统通用样式 ~~~~~~~~~~~~~~~ */
+.sx__system .sx__system-item {
+  height: 100%;
+  width: 300px;
+  flex: 1 0 auto;
+  margin-right: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  border-radius: 6px;
+}
+
+.sx__system .sx__system-item.sx__nav-hover {
+  overflow: hidden;
+}
+.sx__system-item .sx__system-item-bc {
+  flex: auto;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+/* ~~~~~~~~~~~~~~~~~ 前两个 ~~~~~~~~~~~~~~~~~ */
+.sx__system-item.zhcg .sx__system-item-bc {
+  background: url("../images/zhcg.png") no-repeat top;
+  background-size: cover;
+}
+.sx__system-item.zhzf .sx__system-item-bc {
+  background: url("../images/zhzf.png") no-repeat top;
+  background-size: cover;
+}
+.sx__system-item .sx__system-item-name {
+  flex: none;
+  width: 100%;
+  height: 103px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 26px;
+  box-sizing: border-box;
+  border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  -ms-border-radius: 0 0 6px 6px;
+  -o-border-radius: 0 0 6px 6px;
+  z-index: 1;
+}
+.sx__system-item.sx__nav-hover:hover {
+  box-shadow: 3px 10px 14px 6px rgba(41, 31, 77, 0.3);
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.sx__system-item.sx__nav-hover:hover .sx__system-item-bc {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+/* ~~~~~~~~~~~~~~~ 最后一个三行的 ~~~~~~~~~~~~~~~ */
+.sx__system-min-item {
+  width: 100%;
+  height: 110px;
+  flex: 1 0 auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.sx__system-min-item img {
+  position: relative;
+  top: 20px;
+  left: 19px;
+}
+.sx__system-min-item.yxzh {
+  background: url("../images/wxzh.png") no-repeat center;
+  background-size: 130%;
+}
+.sx__system-min-item.dsjfx {
+  background: url("../images/dsjfx.png") no-repeat center;
+  background-size: 130%;
+}
+.sx__system-min-item.msfw {
+  background: url("../images/msfu.png") no-repeat center;
+  background-size: 130%;
+}
+.sx__system-min-item:hover {
+  background-size: 150%;
+  box-shadow: 3px 10px 14px 6px rgba(41, 31, 77, 0.3);
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  border-radius: 8px;
+}
+.sx__system-min-item:last-child {
+  margin-bottom: 0;
+}
+.sx__system .sx__system-item:last-child {
+  margin-right: 0;
 }
 
 /* ====================================================== */
 /* ======================== 底部导航 ======================== */
 /* ====================================================== */
 .sx__nav {
-  height: 265px;
+  /* height: 265px; */
   width: 100%;
   display: flex;
   flex-direction: row;
   flex: 1 0 auto;
   justify-content: space-between;
-  padding-bottom: 40px;
+  /* padding-bottom: 20px; */
   box-sizing: border-box;
 }
 .sx__nav .sx__nav--item {
   flex: none;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .sx__nav--item-header {
