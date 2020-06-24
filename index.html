@@ -27,7 +27,7 @@
                             <img src="./images/weather/23.png" alt="">
                         </div>
                         <div class="weather--item-des">
-                            <div class="temperature">32</div>
+                            <div class="temperature">32°</div>
                             <div class="description">晴转多云</div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                             <img src="./images/weather/03.png" alt="">
                         </div>
                         <div class="weather--item-des">
-                            <div class="temperature">39</div>
+                            <div class="temperature">32°</div>
                             <div class="description">明日</div>
                         </div>
                     </div>
@@ -47,9 +47,14 @@
                             <img src="./images/weather/13.png" alt="">
                         </div>
                         <div class="weather--item-des">
-                            <div class="temperature">31</div>
+                            <div class="temperature">32°</div>
                             <div class="description">后日</div>
                         </div>
+                    </div>
+                    <!-- 退出 -->
+                    <div class="sx__logout">
+                        <div class="sx__logout--icon"></div>
+                        <div class="sx__logout--return">退出</div>
                     </div>
                 </div>
             </header>
@@ -179,71 +184,377 @@
                         <div class="sx__nav--item ">
                             <div class="sx__nav--item-header">市政公用</div>
                             <div class="sx__nav--item-main">
+                                <!-- 市政公用 -->
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用1</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- icon -->
+                                    <div class="sx__sub--nav-icon szgy">
+                                        <img src="./images/szgy.png" alt="">
+                                    </div>
+                                    <!-- 名字 -->
+                                    <div class="sx__sub--nav-name">市政公用</div>
                                 </div>
+                                <!-- 犬类管理 -->
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用2</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon qlglbc">
+                                        <img src="./images/qlglcion.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">犬类管理</div>
                                 </div>
+                                <!-- 应用名称 -->
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用3</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon yymc-1">
+                                        <img src="./images/yymcicon.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">应用名称</div>
                                 </div>
+                                <!-- 应用名称 -->
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用4</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon yymc-2">
+                                        <img src="./images//yymcicon.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">应用名称</div>
                                 </div>
                             </div>
                         </div>
                         <!-- 市容环卫 -->
                         <div class="sx__nav--item">
-                            <div class="sx__nav--item-header">市政公用</div>
+                            <div class="sx__nav--item-header">市容环卫</div>
                             <div class="sx__nav--item-main">
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用1</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon srhw">
+                                        <img src="./images/srhwicon.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">市容环卫</div>
                                 </div>
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用2</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon ztgl">
+                                        <img src="./images/ztgl.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">渣土管理</div>
                                 </div>
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用3</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon ljfl">
+                                        <img src="./images/ljfl.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">垃圾分类</div>
                                 </div>
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用4</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon yymc-3">
+                                        <img src="./images/yymcicon.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">应用名称</div>
                                 </div>
                             </div>
                         </div>
                         <!-- 园林绿化 -->
                         <div class="sx__nav--item two">
-                            <div class="sx__nav--item-header">市政公用</div>
+                            <div class="sx__nav--item-header">园林绿化</div>
                             <div class="sx__nav--item-main">
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用1</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon yllh">
+                                        <img src="./images/yllvicon.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">园林绿化</div>
                                 </div>
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用2</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon gsmm">
+                                        <img src="./images/gsmm.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">古树名木</div>
                                 </div>
                             </div>
                         </div>
                         <!-- 扩展应用 -->
                         <div class="sx__nav--item two">
-                            <div class="sx__nav--item-header">市政公用</div>
+                            <div class="sx__nav--item-header">扩展应用</div>
                             <div class="sx__nav--item-main">
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用1</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon yjzh">
+                                        <img src="./images/yjzh.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">应急指挥</div>
                                 </div>
                                 <div class="sx__sub--nav">
-                                    <div class="sx__sub--nav-icon"></div>
-                                    <div class="sx__sub--nav-name">市政公用2</div>
+                                    <!-- 描边动画 -->
+                                    <div class="svg__path">
+                                        <svg width="181px" height="61px">
+                                            <path stroke='#79E0FE' stroke-width="2" fill="none"
+                                                d="M6.500,0.500 L174.500,0.500 C177.814,0.500 180.500,3.186 180.500,6.500 L180.500,54.500 C180.500,57.814 177.814,60.500 174.500,60.500 L6.500,60.500 C3.186,60.500 0.500,57.814 0.500,54.500 L0.500,6.500 C0.500,3.186 3.186,0.500 6.500,0.500 Z" />
+                                        </svg>
+                                    </div>
+                                    <!-- 光效动画 -->
+                                    <div class="box-shadow">
+                                        <div class="content"></div>
+                                        <!-- icon 动画 -->
+                                        <div class="sx__sub--icon-anima">
+                                            <svg width="70px" height="70px" transform="translate(15, -12) scale(0.8)">
+                                                <g class="anima__go--icon" stroke="#fff" stroke-width="3"
+                                                    stroke-opacity="1" stroke-linecap="round" stroke-dasharray='300,300'
+                                                    stroke-dashoffset='300' ;>
+                                                    <circle fill="none" cx="50%" cy="60%" r="20"></circle>
+                                                    <path class="checkmark__check" stroke-width="3" fill='none'
+                                                        d="M30 31L 44 42 L30 53" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sx__sub--nav-icon gengduo">
+                                        <img src="./images/gengduo.png" alt="">
+                                    </div>
+                                    <div class="sx__sub--nav-name">...</div>
                                 </div>
                             </div>
                         </div>
@@ -260,6 +571,8 @@
                     <div class="sx__toolbar--item">
                         <img src="./images/toolbar-fenxiang.png" alt="">
                     </div>
+                    <!-- 弹窗 -->
+                    <div class="sliding"></div>
                 </div>
 
             </main>

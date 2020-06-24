@@ -16,12 +16,24 @@
     init() {
       this.bindAction();
     },
+    /**
+     * @description
+     * 返回动画事件（依赖于animeJs）
+     * @author wsy
+     * @date 2020-06-23  21:41:05
+     */
     animeAction() {
       var animeParameter = Object.assign(this.anime, {
         targets: this.target,
       });
       return anime(animeParameter);
     },
+    /**
+     * @description
+     * 开始动画
+     * @author wsy
+     * @date 2020-06-23  21:41:33
+     */
     starAnima() {
       // 鼠标移除事件有翻转动画,flag判断是否初次鼠标滑入，不是初次需反转动画
       if (this.starFlag) {
@@ -31,10 +43,22 @@
       }
       this.animation.play();
     },
+    /**
+     * @description
+     * 结束动画
+     * @author wsy
+     * @date 2020-06-23  21:41:33
+     */
     stopAnima() {
       this.animation.reverse();
       this.animation.play();
     },
+    /**
+     * @description
+     * 绑定鼠标事件
+     * @author wsy
+     * @date 2020-06-23  21:41:33
+     */
     bindAction() {
       var self = this;
       $(this.$element)
