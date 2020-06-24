@@ -1,18 +1,24 @@
 (function ($) {
-  function SubAnima({ target, subIconDom, anime }) {
-    this.target = target;
-    this.subIconDom = $(this.target).find(subIconDom).get(0);
+  function SubAnima(ele, { target, anime }) {
+    this.$element = ele;
+    this.target = $(this.$element).find(target).get(0);
     this.anime = anime;
-    this.animation = this.subIconAnima();
+    this.animation = this.animeAction();
     this.init();
   }
   SubAnima.prototype = {
+    /**
+     * @description
+     * 初始化绑定事件
+     * @author wsy
+     * @date 2020-06-23  21:36:55
+     */
     init() {
       this.bindAction();
     },
-    subIconAnima() {
+    animeAction() {
       var animeParameter = Object.assign(this.anime, {
-        targets: this.subIconDom,
+        targets: this.target,
       });
       return anime(animeParameter);
     },
@@ -31,7 +37,7 @@
     },
     bindAction() {
       var self = this;
-      $(this.target)
+      $(this.$element)
         .on("mouseenter", function () {
           self.starAnima();
         })
@@ -40,11 +46,11 @@
         });
     },
   };
-
+  //在插件中使用SubAnima对象
   $.fn.SubAnima = function (options) {
-    //创建Beautifier的实体
-    var SubAnima = new SubAnima(options);
-    //调用其方法
+    $.each(this, function (i, item) {
+      new SubAnima(item, options);
+    });
     return this;
   };
 })(jQuery);

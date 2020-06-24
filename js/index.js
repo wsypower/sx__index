@@ -1,7 +1,6 @@
 $(function () {
   //   $.each($(".sx__sub--nav"), function (i, item) {
-  //     new SubAnima({
-  //       target: item,
+  //     $(item).SubAnima({
   //       subIconDom: ".sx__sub--nav-icon",
   //       anime: {
   //         translateX: 115,
@@ -12,7 +11,7 @@ $(function () {
   //     });
   //   });
   $(".sx__sub--nav").SubAnima({
-    subIconDom: ".sx__sub--nav-icon",
+    target: ".sx__sub--nav-icon",
     anime: {
       translateX: 115,
       scale: 1.2,
